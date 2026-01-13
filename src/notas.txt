@@ -1,0 +1,7 @@
+Se ejecuta con go run, no genera doble binario,
+para eso necesitamos go build para compartirlo
+
+
+go mod init nombre para crear 'organizador' de modulos o paquetes y sus dependencias.
+
+se tiene que estar al nivel del .mod para instalar el paquete
