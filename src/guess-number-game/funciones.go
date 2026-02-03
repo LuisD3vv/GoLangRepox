@@ -1,8 +1,8 @@
-//package main
+package main
 
 import "fmt"
 
-func main() {
+func declaracion_funcion() {
 	nombre := hello("Lissandro")
 	fmt.Println(nombre)
 	// con doble variable capturamos el doble resultado de la funcion

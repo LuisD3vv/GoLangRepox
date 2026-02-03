@@ -1,3 +1,12 @@
+package main
+
+import (
+	"fmt"
+	"runtime"
+	"time"
+)
+
+func queEsSwitch() {
 	// podemos inicializar variables y usarlas dentro del if
 	if t := time.Now(); t.Hour() > 12 {
 		fmt.Println("manana")
@@ -17,7 +26,7 @@
 		fmt.Println("Noche")
 	}
 
-	//switch, no es necsario colocarle el break
+	//switch, no es necsario colocarle el break y como vemos, pdoemos declarar la condicion ahi mismo
 	switch os := runtime.GOOS; os {
 	case "windows":
 		fmt.Println("-> El sistema es windows")
@@ -28,3 +37,4 @@
 	default:
 		fmt.Println("Otro Os")
 	}
+}

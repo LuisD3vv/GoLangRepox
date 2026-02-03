@@ -47,7 +47,7 @@ func jugarNuevamente() {
 	case "n":
 		fmt.Println("Gracias por jugar")
 	default:
-		fmt.Println("Elecciojn invalida")
+		fmt.Println("Eleccion invalida")
 		jugarNuevamente()
 	}
 }

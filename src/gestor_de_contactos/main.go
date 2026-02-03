@@ -1,4 +1,4 @@
-//package main
+package main
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func divide(dividendo, divisor int) (int, error) {
+func divideManejoErrores(dividendo, divisor int) (int, error) {
 	if divisor == 0 {
 		// con este paquete podemos crear errores personalizados, ya que en go los errores se manejan con if
 		return 0, errors.New("No se puede dividir por cero.")
@@ -16,8 +16,8 @@ func divide(dividendo, divisor int) (int, error) {
 }
 
 // Manejo de errores
-func main() {
-	resultado, err := divide(3, 2)
+func Manejo_de_errores() {
+	resultado, err := divideManejoErrores(3, 2)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return

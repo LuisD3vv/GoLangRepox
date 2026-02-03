@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main() {
+func calculo() {
 
 	var lado_1 float64
 	var lado_2 float64

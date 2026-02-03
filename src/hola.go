@@ -3,10 +3,8 @@ package main
 import (
 	"fmt"
 	"math"
-
 	"rsc.io/quote"
 )
-
 // las constantes deben ser inicializadas por obvias razones
 const Pi = 3.14
 

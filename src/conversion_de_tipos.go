@@ -12,12 +12,12 @@ func conversion() {
 
 	s := "100"
 	// como devuelve dos valores, podemos seleccionar cual queremos utilizar
-	i, _ := strconv.Atoi(s)
+	i, _ := strconv.Atoi(s) // strings a numero (si es posible) ejemplo "1" o "2" no "a" o puede conversion tabla ascii
 	fmt.Println(i + i)
 	n := 42
-	s = strconv.Itoa(n)
+	s = strconv.Itoa(n) // numero a strings
 	fmt.Println(s)
-	// no se pueden realizar operaciones entre tipos
+	// no se pueden realizar operaciones entre tipos,es obvio
 	fmt.Println(integer16 + int16(integer32))
 
 	name := "Luis"

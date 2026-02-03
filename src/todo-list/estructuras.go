@@ -1,19 +1,22 @@
-///ackage main
+package main
 
 import "fmt"
 
+// estruct es un tipo de dato personalizado
 type Persona struct {
 	nombre string
 	edad   int
 	correo string
 }
 
+// se podria decir que es un metodo
 // recibe un puntero de tipo persona necesita un receptor () y  el parametro dentro de ella
 func (p *Persona) diHola() {
+	// p es como de llamara a cada una de las "variables creadas a parti del objeto persona y con el punto podremos acceder a sus caracteristicas"
 	fmt.Println("Hola mi nombre es", p.nombre)
 }
 
-func main() {
+func estructura() {
 	Lissandro := Persona{
 		nombre: "Luis",
 		edad:   21,

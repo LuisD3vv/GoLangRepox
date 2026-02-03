@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func UsoDeOS() {
 	// difiere la ejecucion de una funcion
 
 	// es este caso se agregan a un pila de ejecuicion LIFO

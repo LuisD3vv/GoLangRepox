@@ -1,12 +1,12 @@
-/package main
+package main
 
 import "fmt"
 
 // mapas
 
-func main() {
+func queSonMaps() {
 	// elementos clave valor, por defecto se acomodan el orden alfabetico
-	colors := map[string]string{
+	colors := map[string]string{ // tipo de dato de la clave y el valor
 		"rojo":  "#FF0000",
 		"verde": "#00FF00",
 		"azul":  "#0000FF",
