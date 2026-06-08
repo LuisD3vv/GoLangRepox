@@ -12,15 +12,15 @@ func calculo() {
 	var hipotenusa float64
 	var area float64
 	var perimetro float64
-	fmt.Println("--= Calcular el area y el perimetro de un triangulo =--")
+	fmt.Println("--= Calcular el area y el perimetro de un triangulo =--") // con salto de linea
 
-	fmt.Print("Ingrese el lado 1: ")
+	fmt.Print("Ingrese el lado 1: ") // sin salto de linea
 	fmt.Scanln(&lado_1)
 
 	fmt.Print("Ingrese el lado 2: ")
 	fmt.Scanln(&lado_2)
 
-	hipotenusa = math.Sqrt(math.Pow(lado_1, 2) + math.Pow(lado_2, 2))
+	hipotenusa = math.Sqrt(math.Pow(lado_1, 2) + math.Pow(lado_2, 2)) // funciones matematicas
 	perimetro = lado_1 + lado_2
 	area = lado_1 * lado_2 / 2
 	/*

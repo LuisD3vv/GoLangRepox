@@ -10,13 +10,14 @@ func loops() {
 		}
 		fmt.Println(i)
 	}
+
 	// bucle infinito
 	for {
 		fmt.Println("Hola,soy infinito")
 		break
 	}
-	// bucle infinito con break y condicion
 
+	// bucle infinito con break y condicion
 	n := 10
 	for n < 0 {
 		if n == 0 {

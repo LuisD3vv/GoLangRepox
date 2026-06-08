@@ -16,19 +16,19 @@ func divideManejoErrores(dividendo, divisor int) (int, error) {
 }
 
 // Manejo de errores
-func Manejo_de_errores() {
+func Manejo_de_errores() error {
 	resultado, err := divideManejoErrores(3, 2)
 	if err != nil {
-		fmt.Println("Error:", err)
-		return
+		return err
 
 	}
 	fmt.Println("Resultado:", resultado)
 	str := "123"
 	numero, err := strconv.Atoi(str)
 	if err != nil {
-		fmt.Println("Error: ", err)
-		return
+		return err
 	}
 	fmt.Println("Numero: ", numero)
+
+	return nil
 }

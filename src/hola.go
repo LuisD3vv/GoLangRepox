@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 	"math"
+
 	"rsc.io/quote"
 )
+
 // las constantes deben ser inicializadas por obvias razones
 const Pi = 3.14
 
@@ -77,12 +79,10 @@ func main() {
 		fmt.Println("verdadero")
 	}
 	// string
-
 	fullName := "Luis Alejandro \t(alias \"Lissandro\")\n"
 	fmt.Println(fullName)
 	// conocer el valor maximo y minimo que puede almacenar float e int
 	fmt.Println(math.MaxUint8)
-
 	// imprime el valor del codigo ascii / su valor decimal equivalente
 	var a byte = 'a'
 	fmt.Println(a)

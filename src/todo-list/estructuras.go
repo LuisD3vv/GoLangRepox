@@ -34,7 +34,25 @@ func estructura() {
 	fmt.Println(x)
 }
 
-// recibe como argumento un puntero
+/* recibe como argumento un puntero
+
+Podemos percibirlo asi
+
+& donde esta?
+* que hay ahi?
+
+por lo cual al modificar el valor mediante la direccion estanmos diciciendo
+
+
+	var x int = 10
+	sumar(&x) donde esta almacenado x?
+
+
+	func sumar(x *int) {
+	*x = x + 10 // lo que hay en esa direccion, ahora sumale 10
+	}
+*/
+
 func editar(x *int) {
 	*x = 20
 }

@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
+// funcionalidad es util para errores catastroficos en lugares donde no deben ocurrir
+
 func divide(dividendo, divisor int) {
 	// funcion anonima que captura el panico, de esta forma no interfiere con el codigo
 	defer func() {
+		// recover solo funciona dentro de un defer
 		if r := recover(); r != nil {
 			fmt.Println(r)
 		}

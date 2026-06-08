@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"os"
 )
 
-func UsoDeOS() {
+func UsoDeOS() error {
 	// difiere la ejecucion de una funcion
 
 	// es este caso se agregan a un pila de ejecuicion LIFO
@@ -16,29 +15,27 @@ func UsoDeOS() {
 	// A
 	file, err := os.Create("hola.txt")
 	if err != nil {
-		fmt.Println("Error: ", err)
-		return
+		return err
 	}
 
-	// B
+	// C
 	defer file.Close()
 
-	//C
+	// B
 	_, err = file.Write([]byte("Hola, Lissandro"))
 	if err != nil {
-		fmt.Println("Error: ", err)
-		return
+		return err
 	}
 
 	//salida
 
-	//defer dice, pase lo que pase cierro el archivo
+	//defer dice, pase lo que pase cierro el archivo o hago lo que dice
 
 	/*
 		order con defer:
 			A - crear
-			C - escribir
-			B - pase lo que pase se cierra
+			C - pase lo que pase se cierra
+			B - escribir
 	*/
-
+	return nil
 }

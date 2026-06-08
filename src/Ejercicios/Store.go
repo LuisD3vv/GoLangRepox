@@ -75,7 +75,7 @@ func DeleteProducts(productos []Producto) error {
 		temslice = append(temslice, producto)
 	}
 
-	data, err := json.MarshalIndent(temslice, "", " ")
+	data, err := json.MarshalIndent(temslice, "", " ") // toma  3 valores, el vector/map, la separacion y la indentacion, en este caso un espacio
 	/*
 		json.mashall function from the standard encoding/json package is used to convert Go data structures (like structs, maps, and slices) into a JSON-encoded byte slice.
 	*/

@@ -16,8 +16,16 @@ func hello(name string) string {
 	return "Hola, " + name
 }
 
+// funcion con valores de retorno nombrados
 func calc(a, b int) (sum, mult int) {
 	sum = a + b
 	mult = a * b
 	return
+}
+
+// funcion con valores de retorno explicito
+func calc2(a, b int) (int, int) {
+	sum := a + b
+	mult := a * b
+	return sum, mult
 }

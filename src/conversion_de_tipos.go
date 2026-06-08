@@ -20,12 +20,13 @@ func conversion() {
 	// no se pueden realizar operaciones entre tipos,es obvio
 	fmt.Println(integer16 + int16(integer32))
 
+	// tambien exiten Format para castear valores a string FormatInt,Bool etc
 	name := "Luis"
 	age := 21
 	// tal y como funciona en el lenguaje C
 	fmt.Printf("hola, me llamo %s y tengo %d annos\n", name, age)
 
-	greeting := fmt.Sprintf("hola, me llamo %s y tengo %d annos", name, age)
+	greeting := fmt.Sprintf("hola, me llamo %s y tengo %d annos", name, age) // regresa un string formateado
 	fmt.Println(greeting)
 
 	// ingresar usuarios
